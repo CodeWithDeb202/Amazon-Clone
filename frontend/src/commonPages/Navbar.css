@@ -1,0 +1,19 @@
+.navBar{
+    background-color: #131921;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.logo_location{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+.others_Btn{
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
