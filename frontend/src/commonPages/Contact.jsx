@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Contact() {
@@ -44,7 +44,47 @@ function Contact() {
                 </div>
                 <hr />
 
-                <div className="contactLang pb-5">
+                <div className="container pt-3 pb-5">
+                    <div className="row">
+                        <div className="col-4"></div>
+                        
+                        <div className="col-4">
+                            <div className="row">
+                                <div className="col-4">
+                                    <img src="/logo/contactLogoo.png" alt="Contact Logo" />
+                                </div>
+
+                                <div className="col-4">
+                                    <Link to="/language" style={{ textDecoration: 'none', margin: '0' }}>
+                                        <div className="contactLangBtn">
+                                            <i class="fa-solid fa-globe" style={{ opacity: '0.7' }}></i>
+                                            <button>English</button>
+                                            <div className="contactLangBtnIcon">
+                                                <i class="fa-solid fa-caret-up"></i>
+                                                <i class="fa-solid fa-caret-down"></i>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </div>
+
+                                <div className="col-1"></div>
+
+                                <div className="col-3">
+                                    <Link to='/country' style={{ textDecoration: 'none', margin: '0' }}>
+                                        <div className="countryFlag">
+                                            <img style={{width:'2vw'}} src="\logo\Flag_of_India.png" alt="India flag" />
+                                            <button>India</button>
+                                        </div>
+                                    </Link>
+                                </div>
+                                    
+                            </div>
+                        </div>
+
+                        <div className="col-4"></div>
+                    </div>
+                </div>
+                {/* <div className="contactLang pb-5">
                     <img src="\logo\contactLogoo.png" style={{width:'8%'}} alt="Contact Logo" />
                     <Link to="/language" style={{textDecoration:'none', margin:'0'}}>
                         <div className="contactLangBtn">
@@ -62,7 +102,7 @@ function Contact() {
                             <button>India</button>
                         </span>
                     </Link>
-                </div>
+                </div> */}
                 {/* <div className="contactLang">
                     <img src="\logo\contactLogoo.png" style={{width:'8%'}} alt="Contact Logo" />
                     <div className="contactLangBtn">
