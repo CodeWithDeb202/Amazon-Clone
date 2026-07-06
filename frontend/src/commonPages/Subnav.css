@@ -1,0 +1,59 @@
+.subNavBar{
+    background-color: #232F3F;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.subNavBar .sections{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.subNavBar .sections .all{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 0.5rem;
+    border: 1px solid transparent;
+}
+
+.subNavBar .sections .all:hover{
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+.subNavBar .sections .primeday{
+    padding: 0.7rem 0.3rem;
+    border: 1px solid transparent;
+}
+.subNavBar .sections .primeday:hover{
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+.subNavBar .sections .prime{
+    display: flex;
+    align-items: end;
+    gap: 0.3rem;
+    padding: 0.7rem 0.3rem;
+    border: 1px solid transparent;
+}
+
+.subNavBar .sections .prime:hover{
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+
+
+.subNavBar .only_for_deals{
+    padding: 0.2rem 0.2rem;
+    margin-bottom: 0.1rem;
+    border: 1px solid transparent;
+}
+.subNavBar .only_for_deals:hover{
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+}

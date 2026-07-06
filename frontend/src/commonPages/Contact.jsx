@@ -84,43 +84,6 @@ function Contact() {
                         <div className="col-4"></div>
                     </div>
                 </div>
-                {/* <div className="contactLang pb-5">
-                    <img src="\logo\contactLogoo.png" style={{width:'8%'}} alt="Contact Logo" />
-                    <Link to="/language" style={{textDecoration:'none', margin:'0'}}>
-                        <div className="contactLangBtn">
-                            <i class="fa-solid fa-globe" style={{opacity:'0.7'}}></i>
-                            <button>English</button>
-                            <div className="contactLangBtnIcon">
-                                <i class="fa-solid fa-caret-up"></i>
-                                <i class="fa-solid fa-caret-down"></i>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to='/country' style={{textDecoration:'none', margin:'0'}}>
-                        <span className="countryFlag">
-                            <img style={{width:'3%'}} src="\logo\Flag_of_India.png" alt="India flag" />
-                            <button>India</button>
-                        </span>
-                    </Link>
-                </div> */}
-                {/* <div className="contactLang">
-                    <img src="\logo\contactLogoo.png" style={{width:'8%'}} alt="Contact Logo" />
-                    <div className="contactLangBtn">
-                        <Link to="/" style={{textDecoration:'none', margin:'0'}}>
-                            <i class="fa-solid fa-globe" style={{opacity:'0.7'}}></i>
-                            <button>English</button>
-                            <div className="contactLangBtnIcon">
-                                <i class="fa-solid fa-caret-up"></i>
-                                <i class="fa-solid fa-caret-down"></i>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="countryFlag">
-                        <img style={{width:'3%'}} src="\logo\Flag_of_India.png" alt="India flag" />
-                        <button>India</button>
-                    </div>
-                </div> */}
-
             </div>
         </>
     )

@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import Home from './landingPages/home/Home';
 import Navbar from './commonPages/Navbar';
-import SubNav from './landingPages/subNav/SubNav';
+import SubNav from './commonPages/SubNav';
 import Footer from './commonPages/Footer';
 import Personalize from './commonPages/Personalize';
 import Back from './commonPages/Back';
