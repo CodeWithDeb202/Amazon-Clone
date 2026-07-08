@@ -1,0 +1,21 @@
+.homeCarousel {
+  position: relative;
+}
+
+.homeCarousel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, #e3e6e6);
+}
+
+.homeCarousel .carousel-control-prev,
+.homeCarousel .carousel-control-next {
+  top: 20%;
+  bottom: auto;
+  transform: translateY(-50%);
+}

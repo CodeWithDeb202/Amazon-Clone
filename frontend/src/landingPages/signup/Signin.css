@@ -1,0 +1,26 @@
+.signin_page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin_form{
+    padding: 2rem;
+    border: 1px solid #807f7f;
+    border-radius: 1rem;
+}
+
+.Line{
+    background-color: #e5e4e4;
+    height: 2px;
+    width: 100%;
+    margin: 3.5rem 0;
+}
+.signin_footer{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
