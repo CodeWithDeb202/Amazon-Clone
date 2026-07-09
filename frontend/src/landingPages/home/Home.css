@@ -1,5 +1,6 @@
 .homeCarousel {
   position: relative;
+  background-color: #e3e6e6;
 }
 
 .homeCarousel::after {
@@ -15,7 +16,42 @@
 
 .homeCarousel .carousel-control-prev,
 .homeCarousel .carousel-control-next {
-  top: 20%;
+  top: 0;
   bottom: auto;
-  transform: translateY(-50%);
+  height: 250px;
+  width: 80px;
+  z-index: 50;
+  transform: none;
+}
+
+.sqr_rect_cards{
+  position: relative;
+  margin-top: -340px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 0 1.2rem 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sqCardCont{
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.rectCardCont{
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #fff;
+  border-radius: 0.3rem;
 }

@@ -1,8 +1,44 @@
 import { Routes, Route } from "react-router-dom";
 import Location from "../../usagePages/Location";
 import './Home.css';
+import SqrCard from "../cards/SqrCrad";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import RectCard from "../cards/RectCard";
 
 function Home() {
+    const [sqCards, setSqCards] = useState([]);
+    const [rectCards, setRectCards] = useState([]);
+
+    useEffect(() => {
+        const getSqCards = async () => {
+            try {
+                const res = await axios.get('http://localhost:3000/api/sqrcards');
+                setSqCards(res.data);
+            } catch (err) {
+                console.log(err);
+            }
+        }
+
+        getSqCards();
+
+    }, []);
+
+    useEffect(() => {
+        const getRectCards = async () => {
+            try {
+                const res = await axios.get('http://localhost:3000/api/rectcards');
+                setRectCards(res.data);
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        getRectCards();
+
+    }, [])
+
+
+
     return (
         <>
             <Routes>
@@ -32,7 +68,53 @@ function Home() {
                     <span class="visually-hidden">Next</span>
                 </button>
 
-                
+
+                <div className="sqr_rect_cards">
+                    <div className="sqCardCont">
+                        {sqCards.slice(0, 4).map((card) => (
+                            <SqrCard key={card._id} card={card} />
+                        ))}
+                    </div>
+
+                    <div className="rectCardCont">
+                        {rectCards.slice(0, 1).map((card) => (
+                            <RectCard key={card._id} card={card} />
+                        ))}
+                    </div>
+
+                    <div className="sqCardCont">
+                        {sqCards.slice(4, 8).map((card) => (
+                            <SqrCard key={card._id} card={card} />
+                        ))}
+                    </div>
+                    <div className="rectCardCont">
+                        {rectCards.slice(1, 2).map((card) => (
+                            <RectCard key={card._id} card={card} />
+                        ))}
+                    </div>
+                    <div className="rectCardCont">
+                        {rectCards.slice(2, 3).map((card) => (
+                            <RectCard key={card._id} card={card} />
+                        ))}
+                    </div>
+
+                    <div className="sqCardCont">
+                        {sqCards.slice(8, 12).map((card) => (
+                            <SqrCard key={card._id} card={card} />
+                        ))}
+                    </div>
+                    <div className="rectCardCont">
+                        {rectCards.slice(3, 4).map((card) => (
+                            <RectCard key={card._id} card={card} />
+                        ))}
+                    </div>
+                    <div className="rectCardCont">
+                        {rectCards.slice(4, 5).map((card) => (
+                            <RectCard key={card._id} card={card} />
+                        ))}
+                    </div>
+                </div>
+
             </div>
         </>
     )
